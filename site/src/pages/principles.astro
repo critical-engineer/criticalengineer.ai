@@ -13,24 +13,24 @@ const md = new MarkdownIt({
   typographer: false
 });
 
-// Custom link renderer for external links
-const defaultRender = md.renderer.rules.link_open || function(tokens, idx) {
-  return tokens[idx].attrGet('href') ? `<a href="${md.utils.escapeHtml(tokens[idx].attrGet('href'))}"` : '<a';
-};
-
+// Override link_open to add target="_blank" for external links
 md.renderer.rules.link_open = function(tokens, idx) {
   const token = tokens[idx];
   const href = token.attrGet('href');
   
-  // Check if link is external (starts with http/https)
-  const isExternal = href && (href.startsWith('http://') || href.startsWith('https://'));
-  
-  if (isExternal) {
+  // Add target="_blank" for external links
+  if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
     token.attrSet('target', '_blank');
     token.attrSet('rel', 'noopener noreferrer');
   }
   
-  return defaultRender(tokens, idx);
+  // Build the opening tag manually from token attributes
+  let result = '<a';
+  for (let i = 0; i < token.attrs.length; i++) {
+    result += ` ${token.attrs[i][0]}="${token.attrs[i][1]}"`;
+  }
+  result += '>';
+  return result;
 };
 
 const htmlContent = md.render(principlesContent);

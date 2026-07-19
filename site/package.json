@@ -1,0 +1,16 @@
+{
+  "name": "criticalengineer.ai",
+  "version": "0.1.0",
+  "description": "The Critical Engineer - an essay and principles for software engineering",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.11.0",
+    "markdown-it": "^14.0.0"
+  },
+  "devDependencies": {}
+}

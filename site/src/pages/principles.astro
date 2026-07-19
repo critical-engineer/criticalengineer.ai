@@ -1,0 +1,29 @@
+---
+import { readFileSync } from 'fs';
+import { join } from 'path';
+import MarkdownIt from 'markdown-it';
+import Base from '../layouts/Base.astro';
+
+const principlesPath = join(process.cwd(), '../content/principles.md');
+const principlesContent = readFileSync(principlesPath, 'utf-8');
+
+const md = new MarkdownIt({
+  html: true,
+  linkify: false,
+  typographer: false
+});
+
+const htmlContent = md.render(principlesContent);
+---
+
+<Base
+  title="The Critical Engineer Principles"
+  description="Working principles for engineering when expression is cheap and judgment is not."
+  canonical="https://criticalengineer.ai/principles"
+>
+  <Fragment set:html={htmlContent} />
+  
+  <nav style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
+    <a href="/">← Back to essay</a>
+  </nav>
+</Base>

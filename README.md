@@ -4,8 +4,8 @@ Source for [criticalengineer.ai](https://criticalengineer.ai) — an essay and a
 
 ## What this is
 
-- **[The Critical Engineer](essay.md)** — the essay. First person, grounded in how I actually work. Start here.
-- **[The Principles](principles.md)** — the terse reference-card version, for linking in arguments.
+- **[The Critical Engineer](content/essay.md)** — the essay. First person, grounded in how I actually work. Start here.
+- **[The Principles](content/principles.md)** — the terse reference-card version, for linking in arguments.
 
 This is a personal thesis, not a movement, a standard, or a company position. I'm a software engineer with 27 years in the industry; over the past year my daily work shifted to owning the reasoning — problem definition, design, planning, validation — while delegating implementation to AI. These documents are my attempt to think that through in public.
 
@@ -17,7 +17,7 @@ This is a personal thesis, not a movement, a standard, or a company position. I'
 
 Disagreement is the point. If you have a reasoned objection, a counter-example from real systems, or experience running a team this way:
 
-- Open a thread in **[Discussions](../../discussions)** for arguments and experience reports.
+- Open a thread in **[Discussions](https://github.com/critical-engineer/criticalengineer.ai/discussions)** for arguments and experience reports.
 - Open a **PR** for corrections, sharper wording, or missing references.
 
 The documents get revised in public. Substantive changes are logged in [CHANGELOG.md](CHANGELOG.md), including the ones where someone changed my mind — especially those.

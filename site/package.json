@@ -12,5 +12,7 @@
     "astro": "^4.11.0",
     "markdown-it": "^14.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@lhci/cli": "^0.12.0"
+  }
 }

@@ -13,6 +13,26 @@ const md = new MarkdownIt({
   typographer: false
 });
 
+// Custom link renderer for external links
+const defaultRender = md.renderer.rules.link_open || function(tokens, idx) {
+  return md.utils.escapeHtml(tokens[idx].content);
+};
+
+md.renderer.rules.link_open = function(tokens, idx) {
+  const token = tokens[idx];
+  const href = token.attrGet('href');
+  
+  // Check if link is external (starts with http/https or mailto)
+  const isExternal = href && (href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:'));
+  
+  if (isExternal && !href.startsWith('mailto:')) {
+    token.attrSet('target', '_blank');
+    token.attrSet('rel', 'noopener noreferrer');
+  }
+  
+  return defaultRender(tokens, idx);
+};
+
 const htmlContent = md.render(essayContent);
 ---
 
@@ -24,6 +44,6 @@ const htmlContent = md.render(essayContent);
   <Fragment set:html={htmlContent} />
   
   <nav style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
-    <a href="/principles">Read the principles →</a>
+    <a href="/principles" style="text-decoration: none;">Read the principles →</a>
   </nav>
 </Base>

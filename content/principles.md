@@ -2,7 +2,7 @@
 
 *The reference-card version of [the essay](/). Signed, not anonymous: these are my working beliefs, revised in public as better arguments arrive.*
 
-Engineering should organise itself around its scarce resource. AI has changed where that scarcity lies: expression has become cheap, and judgment has not.
+Engineering should organise itself around its scarce resource. AI has changed where that scarcity lies: expression has become cheap, and judgement has not.
 
 **1. Code is the expression of engineering decisions, not the primary locus of engineering effort.**
 Reasoning builds theory; theory guides decisions; decisions produce implementation; implementation feeds back into reasoning. AI compresses one phase of that cycle, expression, far more than the others. An engineer's output is not lines of code, PRs raised, or tickets closed. Those are artefacts of the work, not the work.

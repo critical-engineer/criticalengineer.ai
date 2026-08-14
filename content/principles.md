@@ -31,4 +31,9 @@ Following Naur: a program is not its source code; it is the theory alive in the 
 
 **A test for revisions.** If AI became significantly more capable, would this still be true? Claims that survive that question are the ones worth keeping.
 
-*Object, extend, or sharpen these in the [repository](https://github.com/critical-engineer/criticalengineer.ai). — [Dries Samyn](https://www.linkedin.com/in/dries-samyn/)*
+*Object, extend, or sharpen these in the [repository](https://github.com/critical-engineer/criticalengineer.ai).*
+
+Collaborators:
+
+- [Dries Samyn](https://www.linkedin.com/in/dries-samyn/) - https://github.com/driessamyn
+- [Sebastian Bohle] (https://www.linkedin.com/in/sebastian-bohle/) - https://github.com/sebb001

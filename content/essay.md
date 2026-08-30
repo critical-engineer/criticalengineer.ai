@@ -44,6 +44,10 @@ I think Naur's insight is the strongest argument for everything in this essay, a
 
 Vibe coding is not a new failure mode. In 2003 it was pasting from Stack Overflow; in 2018 it was cargo-culting framework patterns; today it is accepting model output by feel until something works. What is new is the fluency. The old signals that something was wrong, alien idioms, awkward structure, obvious copy-paste seams, are gone. The code looks like a competent engineer wrote it.
 
+It is also not confined to engineering. Expression has been compressed elsewhere for twenty years in tools like Salesforce, SAP, Zendesk, and NetSuite, and we already know how that went. These tools put real business logic in the hands of people who have no idea what a compiler is. No code reviews, no pull requests, just config screens, Flow, triggers, workflow rules. Fast, and never reviewed in the way an engineer would recognise. What came out of it is familiar to anyone who has worked near those systems. Hundreds of custom fields nobody can explain. SAP configuration whose reasoning walked out with a consultant in 2011. Zendesk trigger cascades that work until they don't, and then take a week to unpick. Those are dead programs in exactly Naur's sense, and not one LLM was involved.
+
+That changes what this essay is an argument about. Compressing expression without building theory orphans systems whatever is doing the compressing; AI widened the doorway, it did not open it. Which is the uncomfortable version of the claim, because it means the evidence has been in for twenty years, and the response has mostly been to treat the resulting mess as an administrative problem rather than an engineering one.
+
 The plan-first workflow is, at bottom, deliberate theory building. The plan is not the theory; it is how you start building one, and it is the trace that lets a colleague, or you six months later mid-incident, rebuild it fast.
 
 ## What I am not claiming

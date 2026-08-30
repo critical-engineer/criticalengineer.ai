@@ -25,6 +25,9 @@ Status is derived from the artefacts of work: plans, decisions, validation resul
 **7. The team is a theory-building system, not a delivery machine.**
 Following Naur: a program is not its source code; it is the theory alive in the minds of the people who understand it. Code produced without shared theory is orphaned, it works until it doesn't, and then nobody can fix it. The highest-performing team under this model is one where the theory of each subsystem is distributed, challenged, and alive across multiple engineers. That is also what makes individual autonomy safe.
 
+**8. The plan begins where the demand originates.**
+Wrong requirements are made upstream of engineering: a process flow redefined, a pricing rule changed, a value added to a dropdown. By the time the work reaches engineering the reasoning has been stripped out. A change to shared meaning deserves a few sentences of reasoning from the person making it: what is changing, why, and what would show it wrong. A decision with a name and a reason attached can be found, questioned and reversed; one without them has to be dug up. This matters more now, not less: a team's backlog used to be an accidental filter, wrong requirements sat in a queue long enough to be questioned, and cheap expression has removed the queue. What leaves engineering is a derived view; what arrives must bring its reasoning with it. Otherwise the result is a careful engineering function sitting downstream of a place where nobody reasons at all.
+
 ---
 
 **Scope, honestly stated.** These principles assume systems where being subtly wrong is expensive. For short-lived, low-stakes software, fast and shallowly-understood may be the right trade. The boundary between the two regimes is a judgement call, and it should be made deliberately.
